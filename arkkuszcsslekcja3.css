@@ -1,0 +1,111 @@
+body
+{
+	background-color: #303030;
+	color: white;
+	font-family: 'Lato', sans-serif;
+	font-silver: 20px
+}
+#container
+{
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.rectangle
+{
+	width: 960px;
+	margin: 20px;
+	text-align: center;
+}
+.square
+{
+	width: 50%;
+	float: left;
+}
+#logo
+{
+	font-family: 'Josefin Slab', serif;
+	font-size: 70px;
+	width: 600px;
+	float: left;
+	text-align: left;
+}
+#zegar
+{
+	font-family: 'Josefin Slab', serif;
+	font-size: 70px;
+	float: left;
+	text-align: left;
+}
+.tile1
+{
+	margin: 10px;
+	width: 230px;
+	height: 142px;
+	background-color: #00ffff;
+	float: left;
+}
+.tile2
+{
+	margin: 10px;
+	width: 230px;
+	height: 142px;
+	background-color: #ff3300;
+	float: left;
+}
+.tile3
+{
+	margin: 10px;
+	width: 230px;
+	height: 142px;
+	background-color: #00ff00;
+	float: left;
+}
+.tile4
+{
+	margin: 10px;
+	width: 480px;
+	height: 142px;
+	background-color: #ff9900;
+	float: left;
+}
+.tile5
+{
+	margin: 10px;
+	width: 480px;
+	height: 304px;
+	background-color: #666666;
+
+}
+.YT
+{
+	margin: 10px;
+	width: 105px;
+	height: 142px;
+	background-color: red;
+	float: left;
+}
+.G
+{
+	margin: 10px;
+	width: 105px;
+	height: 142px;
+	background-color: #d95333;
+	float: left;
+}
+.FB
+{
+	margin: 10px;
+	width: 105px;
+	height: 142px;
+	background-color: #4668b3;
+	float: left;
+}
+.tw
+{
+	margin: 10px;
+	width: 105px;
+	height: 142px;
+	background-color: #3095d3;
+	float: left;
+}
