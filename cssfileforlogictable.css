@@ -15,7 +15,7 @@
 	#nav
 	{
 		float: left;
-		background-color: yellow;
+		background-color: green;
 		width: 120px;
 		min-height: 620px;
 		padding: 10px;
@@ -34,7 +34,7 @@
 		width: 160px;
 		min-height: 620px;
 		padding: 10px;
-		background-color: blue;
+		background-color: red;
 	}
 	
 	#footer
