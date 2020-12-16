@@ -23,6 +23,7 @@
 	
 	#content
 	{
+		text-align: justify;
 		float: left;
 		padding: 20px;
 		width: 640px
