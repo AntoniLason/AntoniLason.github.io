@@ -1,6 +1,8 @@
 #container
 	{
-		width: 1000px;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 18px;
+		width: 1160px;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -14,9 +16,10 @@
 
 	#nav
 	{
+		text-align: justify;
 		float: left;
 		background-color: green;
-		width: 120px;
+		width: 190px;
 		min-height: 620px;
 		padding: 10px;
 	}
@@ -26,13 +29,13 @@
 		text-align: justify;
 		float: left;
 		padding: 20px;
-		width: 640px
+		width: 700px
 	}
 	
 	#ad
 	{
 		float: left;
-		width: 160px;
+		width: 190px;
 		min-height: 620px;
 		padding: 10px;
 		background-color: red;
