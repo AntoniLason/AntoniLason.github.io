@@ -1,6 +1,8 @@
 Zadanie A
+
 1
 enable
+
 3
 configure terminal 
 
@@ -8,16 +10,130 @@ configure terminal
 interface vlan1
 ip address 200.200.200.1 255.255.255.0
 no shutdown 
+
 6
 interface fa 0/5 
 switchport mode access
+
 6
 !!Przeczytać co to robi zanim się urzyje !!
 interface fa 0/5
 switchport nonegotiate
+
 7
+!!Przeczytać co to robi zanim się urzyje !!
 show ip interface brief 
 show ip interface vlan 1 
-lub z trybu konfiguracji: 
+////////lub z trybu konfiguracji: 
 do show ip interface brief 
 do show ip interface vlan 1
+
+
+Zadanie B
+
+1
+show vlan
+
+2
+Switch#conf t 
+Switch(config)#vlan 20
+Switch(config-vlan)#exit 
+Switch(config)#vlan 21
+Switch(config)#vtp mode transparent
+
+3
+interface fa0/2
+no shutdown 
+switchport mode access 
+switchport access vlan 20 
+
+interface fa 0/2 
+switchport nonegotiate
+
+4
+interface range fa0/15 - 17 
+switchport mode access 
+switchport access vlan 20
+
+5
+vlan database 
+
+exit
+
+6
+obawiam się, że wymaga samodzielnego myślenia
+
+Zadanie C
+
+3
+interface fa0/1
+no shutdown 
+switchport mode trunk
+
+switchport trunk encapsulation dot1q
+
+4
+switchport trunk allowed vlan 1-100
+switchport trunk allowed vlan remove 10
+
+5
+show running-config 
+show interface trunk 
+show interface fa 0/1 switchport 
+show interface fa 0/1 status 
+
+6
+show vlan
+
+8
+int fa 0/1
+switchport trunk native vlan 10 
+
+Switch#show interface fa 0/1 trunk 
+lub 
+Switch#show interface fa 0/1 switchport 
+
+Zadanie D
+
+Switch(config-if)#switchport mode trunk
+
+Switch(config)#show int fa 0/1 switchport
+
+Switch(config)#vtp domain domena
+
+Switch(config)#vtp password haslo
+
+Switch#show vtp status 
+
+Switch#debug sw-vlan vtp events
+
+1
+Switch(config)#vtp mode server
+
+2
+Switch(config)#vtp domain domena 
+Switch(config)#vtp mode client
+
+3
+Switch(config)#vlan 20
+Switch(config-vlan)#exit 
+Switch(config)#vlan 21 
+Switch(config-vlan)#exit 
+Switch(config)#vlan 22
+Switch(config-vlan)#exit
+
+!!przeczytać co to robi!!
+Switch(config)#interface vlan 3 
+Switch(config)#no int vlan 3 
+
+4
+Switch#show vlan 
+
+5
+Switch(config)#vtp mode transparent
+
+Switch(config)#vtp mode client 
+
+7
+Switch#show vtp status
+Switch#debug sw-vlan vtp events
