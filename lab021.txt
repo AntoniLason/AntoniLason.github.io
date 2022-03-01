@@ -1,0 +1,23 @@
+Zadanie A
+1
+enable
+3
+configure terminal 
+
+5
+interface vlan1
+ip address 200.200.200.1 255.255.255.0
+no shutdown 
+6
+interface fa 0/5 
+switchport mode access
+6
+!!Przeczytać co to robi zanim się urzyje !!
+interface fa 0/5
+switchport nonegotiate
+7
+show ip interface brief 
+show ip interface vlan 1 
+lub z trybu konfiguracji: 
+do show ip interface brief 
+do show ip interface vlan 1
